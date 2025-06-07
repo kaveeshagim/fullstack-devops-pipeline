@@ -6,6 +6,11 @@ pipeline {
     }
     
     stages {
+        stage('Clone') {
+            steps {
+                git 'https://github.com/kaveeshagim/fullstack-devops-pipeline'
+            }
+        }
 
         stage('Build Docker Image') {
             steps {

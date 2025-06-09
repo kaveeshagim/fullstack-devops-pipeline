@@ -17,5 +17,6 @@ spec:
       containers:
         - name: devops-pipeline-app-container
           image: kaveeshadev/devops-pipeline-app:latest
+          imagePullPolicy: Always
           ports:
             - containerPort: 3000
